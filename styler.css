@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --second-bg-color: #f7f7f7;
+    --text-color: #000000;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+section {
+    min-height: 100vh;
+    padding: 0.3rem 9% 2rem;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+
+.logo {
+    font-size: 2.6rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.logo #dot {
+    color: #0ef;
+
+}
+
+
+
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
+    color: var(--main-color)
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+
+}
+
+
+
+.home .home-image {
+    width: 600px;
+    height: auto;
+    padding: 1px;
+    padding-left: 20px;
+    background-color: none;
+    margin: 10px;
+}
+
+.home-image #img {
+    max-width: 50%;
+    height: auto;
+
+}
+
+
+
+.home {
+    text-align: left;
+    padding-left: 130px;
+}
+
+.home-content h3 {
+    font-size: 3.3rem;
+    font-weight: bold;
+
+}
+
+.home-content h1 {
+    font-size: 4.3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: justify;
+
+}
+
+.home-content h2 {
+    font-weight: 800;
+    font-size: 2.3rem;
+    text-align: justify;
+}
+
+.test {
+    color: var(--main-color);
+    text-align: justify;
+
+}
+
+p {
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*social media-------------------------------------------------------------------------------------------------------- */
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+    font-size: large;
+
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+
+}
+
+.btn {
+    display: inline-block;
+    padding: .4rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    position: relative;
+    /* Allows precise positioning */
+    bottom: 65px;
+    /* Move the button down by 10px */
+    left: 190px;
+    /* Move the button to the right by 20px */
+    width: 130px;
+    height: 27px;
+    color: white;
+    font-weight: 900;
+    transition: .5 ease;
+    text-align: center;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+
+
+
+/*about section--------------------------------------------------------------------------------------------------*/
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+
+}
+
+.about h2 {
+    font-weight: 900;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.about #kolor {
+    color: var(--main-color)
+}
+
+.about h3 {
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.about .about-content {
+    line-height: 1.5;
+}
+
+
+
+
+
+/*services-------------------------------------------------------------------------------------------------------*/
+
+#caddy {
+    margin: 10px;
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+    padding-top: 50px;
+    font-weight: 900;
+    font-size: 4rem;
+
+}
+
+#blu {
+    color: #0ef;
+
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.service-container .service-box {
+    flex: 1 1 30rem;
+    background: #FFFFFF;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 2px solid #ffffff;
+    /* Set the border style and color */
+    transition: .5 ease;
+    box-shadow: none;
+    /* Create a glowing shadow effect with the same color */
+
+}
+
+
+
+
+
+
+.service-box i {
+    font-size: 7rem;
+    color: #0ef;
+}
+
+.service-box h3 {
+    font-size: 2.6rem;
+}
+
+.service-box p {
+    font-size: 1.4rem;
+    margin: .3rem 0 3rem;
+}
+
+
+.service-container .service-box:hover {
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px 2px #0ef;
+    box-shadow: #0ef
+}
+
+/*--- latest projects    ----*/
+.portfolio .heading {
+    margin-bottom: 5rem;
+    padding-top: 50px;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.portfolio .heading .blu {
+    color: #0ef;
+}
+
+
+
+.portfolio {
+    background-color: var(--bg-color);
+}
+
+
+
+.portfolio-container {
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    background-color: none;
+    margin: 0 auto;
+
+}
+
+.portfolio-box #design1 {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-box h4 {
+    font-weight: 900;
+    font-size: 3rem;
+    padding-top: 40px;
+}
+
+.portfolio-box p {
+    padding-top: 10px;
+}
+
+.portfolio-box img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 60px;
+}
